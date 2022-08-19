@@ -44,3 +44,43 @@ body {
     color: white;
     font-family:Arial, Helvetica, sans-serif;
   }
+
+  .parrafo1{
+    background-color: rgb(255, 123, 0);
+    color: rgb(90, 48, 9);
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    text-align: center;
+    margin: 50px 20px;    
+    font-size: 25px;
+  }
+
+  .animacionIndex {
+    animation-duration: 3s;
+    animation-name: mover;
+  }
+  
+  @keyframes mover {
+    0%{
+        transform: translateY(300%);
+    }
+  
+    100% {
+      transform: translateY(0%);
+    }
+  }
+
+  .h1Nosotros{
+    color: rgb(255, 123, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+    background-color: rgb(253, 244, 212);
+    border-radius: 50px;
+    text-align: center;
+}
+
+.colorForm{
+  color: white;
+  font-size: 20px;
+ }
