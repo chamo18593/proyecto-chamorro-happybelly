@@ -1,5 +1,6 @@
-[
-        {
+{
+    "status": "success",
+    "items": [{
             "id": 1,
             "title": "Bizcochitos de grasa",
             "price": 250,
@@ -72,3 +73,4 @@
             "category": "dulce"
         }        
     ]
+}
