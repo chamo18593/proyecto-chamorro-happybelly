@@ -1,52 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://kit.fontawesome.com/0607d3517d.js" crossorigin="anonymous"></script>
-    <title>Happy Belly Cocina!</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"/>
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
-    <nav class="nav">
-        <div class="nav__center container">
-            <div class="nav__logo">
-			    <h1>Happy Belly Cocina</h1>
-		    </div>
-		    <ul class="nav__list">
-			    <div class="carrito__icon">			        
-              <i class="fa-solid fa-basket-shopping bx bx-cart"></i>
-			        <span class="item__total">0</span>
-	            </div>
-			</ul>
-      </div>
-    </nav>
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="https://kit.fontawesome.com/0607d3517d.js" crossorigin="anonymous"></script>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"/>
+   <link rel="stylesheet" href="./css/style.css" />
+   <title>Happy Belly cocina!</title>
+</head>
+<body>
+   <div class="container">
+       <h1 class="bienvenidos">Bienvenidos a Happy Belly</h1>
+       <hr>
 
-    <section class="productos">
-      <div class="productos__center"></div>
-    </section>
-    
-    <section class="carrito__overlay">
-      <div class="carrito">
-        <span class="close__carrito">
-          <i class="bx bx-x"></i>
-        </span>
-        <h1>Su Carrito</h1>
+       <table class="table table1">
+           <thead>
+             <tr>
+               <th scope="col">#</th>
+               <th scope="col">Item</th>
+               <th scope="col">Cantidad</th>
+               <th scope="col">Acción</th>
+               <th scope="col">Total</th>
+             </tr>
+           </thead>
+           <tbody id="items"></tbody>
+           <tfoot>
+             <tr id="footer">
+               <th scope="row" colspan="5">Carrito vacío :(</th>
+             </tr>
+           </tfoot>
+         </table>
 
-        <div class="carrito__center"></div>
+       <div class="row" id="cards"></div>
+   </div>
 
-        <div class="carrito__footer">
-            <h3>Total: $ <span class="carrito__total">0</span></h3>
-            <button class="clear__carrito btn">vaciar carrito</button>
-        </div>
-      </div>
-    </section>
+   <template id="template-footer">
+       <th scope="row" colspan="2">Total productos</th>
+       <td>10</td>
+       <td>
+           <button class="btn btn-danger btn-sm" id="vaciar-carrito">
+               vaciar todo
+           </button>
+           <button class="btn btn-danger btn-sm"  id="finalizar">
+               <a class="finalizar1" href="./paginas/final.html">finalizar compra</a>
+           </button>
+       </td>
+       <td class="font-weight-bold">$ <span>5000</span></td>
+   </template>
+   
+   <template id="template-carrito">
+     <tr>
+       <th scope="row">id</th>
+       <td>Café</td>
+       <td>1</td>
+       <td>
+           <button class="btn btn-info btn-sm">
+               +
+           </button>
+           <button class="btn btn-danger btn-sm">
+               -
+           </button>
+       </td>
+       <td>$ <span>500</span></td>
+     </tr>
+   </template>
+   
+   <template id="template-card">
+       <div class="col-12 mb-2 col-md-4">
+         <div class="card tarjeta1">
+           <img src="" alt="" class="img-card-top">
+           <div class="card-body">
+             <h5>Titulo</h5>
+             <p>precio</p>
+             <button class="btn btn-dark">Comprar</button>
+           </div>
+         </div>
+       </div>
+     </template>   
 
-    <script src="./js/scripts.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="./js/sweetalert.js"></script>
-  </body>
+     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+     <script src="./sweetalert.js"></script>
+   <script src="app.js"></script>
+</body>
 </html>

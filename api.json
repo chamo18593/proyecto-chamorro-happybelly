@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "title": "Bizcochitos de grasa",
+        "price": 250,
+        "image": "./imagenes/bizcochitos.png",
+        "category": "salado"
+    },
+    {
+        "id": 2,
+        "title": "Chipa",
+        "price": 400,
+        "image": "./imagenes/chipa.png",
+        "category": "salado"
+    },
+    {
+        "id": 3,
+        "title": "Croissant con jamon y queso",
+        "price": 450,
+        "image": "./imagenes/croisant.png",
+        "category": "salado"
+    },
+    {
+        "id": 4,
+        "title": "Pan de campo",
+        "price": 300,
+        "image": "./imagenes/pan-campo.png",
+        "category": "salado"
+    },
+    {
+        "id": 5,
+        "title": "Brownie",
+        "price": 250,
+        "image": "./imagenes/brownie.png",
+        "category": "dulce"
+
+    },
+    {
+        "id": 6,
+        "title": "Budin de chocolate",
+        "price": 200,
+        "image": "./imagenes/budin-choco.png",
+        "category": "dulce"
+
+    },
+    {
+        "id": 8,
+        "title": "Cookies",
+        "price": 190,
+        "image": "./imagenes/cookies.png",
+        "category": "dulce"
+    },
+    {
+        "id": 9,
+        "title": "Dona de Chocolate",
+        "price": 250,
+        "image": "./imagenes/dona-chocolate.png",
+        "category": "dulce"
+    },
+    {
+        "id": 10,
+        "title": "Dona rosa",
+        "price": 250,
+        "image": "./imagenes/donarosa.png",
+        "category": "dulce"
+    },
+    {
+        "id": 11,
+        "title": "Waffles",
+        "price": 500,
+        "image": "./imagenes/waffles.png",
+        "category": "dulce"
+    }        
+]

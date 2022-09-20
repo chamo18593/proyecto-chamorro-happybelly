@@ -1,0 +1,16 @@
+Swal.fire({
+	title: 'Bienvenido a Happy Belly!',
+	text: 'Estamos felices de que estes aquí aqui!',
+	confirmButtonText: 'Ingresa tus datos',
+	footer: 'Esto es para realizar tu pedido!',
+	width: '50%',
+    padding: '1rem',
+	backdrop: true,
+	position: 'center',
+	allowOutsideClick: false,	
+	allowEnterKey:true,
+	stopKeydownPropagation: 'false',
+	input: 'text', 
+	inputPlaceholder: 'Nombre y dirección:',    
+	inputValue: '', 
+})
